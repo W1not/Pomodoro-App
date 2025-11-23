@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Threading;
+using Microsoft.Toolkit.Uwp.Notifications;
+
+
 
 namespace Pomodoro
 {
@@ -37,6 +41,11 @@ namespace Pomodoro
 
         }
 
+        public class SoundPlayerWin32
+        {
+            [DllImport("user32.dll")]
+            public static extern bool MessageBeep(uint uType);
+        }
 
         private TimeSpan GetWorkDuration()
         {
@@ -102,7 +111,7 @@ namespace Pomodoro
             _isWorkPhase = true;
             _currentPhaseTotal = GetWorkDuration();
             _remainingTime = _currentPhaseTotal;
-
+            SoundPlayerWin32.MessageBeep(0x00000010); // Sonido
             PhaseText.Text = "Fase: Trabajo";
             SetWorkRunningColor();
 
@@ -119,12 +128,14 @@ namespace Pomodoro
 
             if (longBreak)
             {
+                SoundPlayerWin32.MessageBeep(0x00000010); // Sonido 
                 _currentPhaseTotal = GetLongBreakDuration();
                 PhaseText.Text = "Fase: Descanso largo";
                 SetLongBreakColor();
             }
             else
             {
+                SoundPlayerWin32.MessageBeep(0x00000010); // Sonido 
                 _currentPhaseTotal = GetBreakDuration();
                 PhaseText.Text = "Fase: Descanso";
                 SetBreakRunningColor();
@@ -181,7 +192,7 @@ namespace Pomodoro
 
         private void SetLongBreakColor()
         {
-            AnimateBackgroundTo("#FF9F1C"); 
+            AnimateBackgroundTo("#A05E00"); 
         }
 
 
@@ -212,6 +223,7 @@ namespace Pomodoro
         {
             _timer.Stop();
             _isRunning = false;
+
             SetIdleColor();
             SetWorkPhase();
             UpdateUI();

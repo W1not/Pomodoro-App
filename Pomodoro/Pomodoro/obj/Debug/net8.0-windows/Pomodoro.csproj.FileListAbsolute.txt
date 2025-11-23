@@ -18,3 +18,28 @@ C:\Users\UBGA - SoporteTI\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\De
 C:\Users\UBGA - SoporteTI\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.pdb
 C:\Users\UBGA - SoporteTI\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.genruntimeconfig.cache
 C:\Users\UBGA - SoporteTI\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\ref\Pomodoro.dll
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\bin\Debug\net8.0-windows\Pomodoro.exe
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\bin\Debug\net8.0-windows\Pomodoro.deps.json
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\bin\Debug\net8.0-windows\Pomodoro.runtimeconfig.json
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\bin\Debug\net8.0-windows\Pomodoro.dll
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\bin\Debug\net8.0-windows\Pomodoro.pdb
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro_Content.g.cs
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro_MarkupCompile.cache
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro_MarkupCompile.lref
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.g.resources
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.AssemblyInfoInputs.cache
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.AssemblyInfo.cs
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.csproj.CoreCompileInputs.cache
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.sourcelink.json
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.dll
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\refint\Pomodoro.dll
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.pdb
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.genruntimeconfig.cache
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\ref\Pomodoro.dll
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\bin\Debug\net8.0-windows\Microsoft.Toolkit.Uwp.Notifications.dll
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.csproj.AssemblyReference.cache
+C:\Users\Winet\Documents\GitHub\Pomodoro-App\Pomodoro\Pomodoro\obj\Debug\net8.0-windows\Pomodoro.csproj.Up2Date
