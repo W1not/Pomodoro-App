@@ -9,6 +9,7 @@ using Microsoft.Toolkit.Uwp.Notifications;
 
 
 
+
 namespace Pomodoro
 {
     /// <summary>
@@ -41,10 +42,18 @@ namespace Pomodoro
 
         }
 
-        public class SoundPlayerWin32
+        string iconPath = System.IO.Path.Combine(
+                AppDomain.CurrentDomain.BaseDirectory,
+                "icon_multi.ico"
+);
+
+        private void ShowToast(string title, string message)
         {
-            [DllImport("user32.dll")]
-            public static extern bool MessageBeep(uint uType);
+            new ToastContentBuilder()
+                .AddAppLogoOverride(new Uri(iconPath))
+                .AddText(title)
+                .AddText(message)
+                .Show();
         }
 
         private TimeSpan GetWorkDuration()
@@ -95,11 +104,21 @@ namespace Pomodoro
                 {
                     _pomodorosCompletados++;
                     PomodoroCountText.Text = $"Pomodoros completados: {_pomodorosCompletados}";
-                }
-                if (_isWorkPhase)
+
+                    ShowToast("Pomodoro completado", $"Has completado {_pomodorosCompletados} pomodoros");
+
+                    // IR A DESCANSO
                     SetBreakPhase();
+                }
                 else
+                {
+
+                    ShowToast("Iniciando fase de trabajo", "Enfoquémonos en esta sesión. ¡Tú puedes!");
+
+                    // IR A TRABAJO
                     SetWorkPhase();
+                }
+
                 _isRunning = true;
                 _timer.Start();
             }
@@ -108,13 +127,11 @@ namespace Pomodoro
 
         private void SetWorkPhase()
         {
+            
             _isWorkPhase = true;
             _currentPhaseTotal = GetWorkDuration();
             _remainingTime = _currentPhaseTotal;
-            SoundPlayerWin32.MessageBeep(0x00000010); // Sonido
             PhaseText.Text = "Fase: Trabajo";
-            SetWorkRunningColor();
-
             UpdateUI();
         }
 
@@ -128,14 +145,12 @@ namespace Pomodoro
 
             if (longBreak)
             {
-                SoundPlayerWin32.MessageBeep(0x00000010); // Sonido 
                 _currentPhaseTotal = GetLongBreakDuration();
                 PhaseText.Text = "Fase: Descanso largo";
                 SetLongBreakColor();
             }
             else
             {
-                SoundPlayerWin32.MessageBeep(0x00000010); // Sonido 
                 _currentPhaseTotal = GetBreakDuration();
                 PhaseText.Text = "Fase: Descanso";
                 SetBreakRunningColor();
