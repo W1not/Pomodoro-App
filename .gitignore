@@ -36,3 +36,4 @@ Generated/
 *.backup
 *.tmp
 *.temp
+/Pomodoro/.vs/Pomodoro/FileContentIndex
