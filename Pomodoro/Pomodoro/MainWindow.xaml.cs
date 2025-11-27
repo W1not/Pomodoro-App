@@ -119,8 +119,6 @@ namespace Pomodoro
                     SetWorkPhase();
                 }
 
-                _isRunning = true;
-                _timer.Start();
             }
         }
 
