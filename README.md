@@ -6,6 +6,6 @@ Pomodoro Timer is a time-management methodology that divides work into 25-minute
 ## Technology 
 ![.NET Badge](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff&style=flat-square)
 
-## Installation
+## Requeriments
 
 1. Version .Net 8
